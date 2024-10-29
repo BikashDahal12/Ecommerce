@@ -5,6 +5,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer'; // Import Footer
 
+
+import ForHerBanner from './components/ForHerBanner';
+
+
 import axios from 'axios';
 import './App.css'; // Import global styles
 
@@ -32,6 +36,9 @@ function App() {
     <Router>
       <div className="app-container"> {/* Main Container */}
         <Navbar />
+
+        <ForHerBanner/>
+
         <div className="content-wrapper">
           <Routes>
             <Route
@@ -77,6 +84,8 @@ function App() {
               }
             />
             {/* Other Routes */}
+            <Route path="ForHer" element={<div>ForHerPage</div>}/>
+            
             <Route path="/offers" element={<div>Tihar Offers Page</div>} />
             <Route path="/new-arrivals" element={<div>New Arrivals Page</div>} />
             <Route path="/account" element={<div>My Account Page</div>} />

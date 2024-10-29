@@ -1,20 +1,3 @@
-// // src/components/Footer.js
-// import React from 'react';
-// import './Footer.css'; // Import styling
-
-// const Footer = () => {
-//   return (
-//     <footer className="footer">
-//       <p>&copy; 2024 KTM City. All rights reserved.</p>
-//       <p>Contact: support@ktmcity.com | +977-01-1234567</p>
-//       <p>Location: Kathmandu, Nepal</p>
-//     </footer>
-//   );
-// };
-
-// export default Footer;
-
-
 
 import React from 'react';
 import './Footer.css';
