@@ -5,8 +5,7 @@ const ForHerBanner = () => {
   return (
     <div className="for-her-banner">
       <img 
-        src="https://t4.ftcdn.net/jpg/02/66/14/41/360_F_266144152_zqmMfooqyPv3BAztmO0Hin7FN1DzK8B9.jpg
-"                     // Replace with actual banner image URL
+        src="https://t4.ftcdn.net/jpg/02/66/14/41/360_F_266144152_zqmMfooqyPv3BAztmO0Hin7FN1DzK8B9.jpg"                     
         alt="For Her Banner" 
         className="banner-image" 
       />

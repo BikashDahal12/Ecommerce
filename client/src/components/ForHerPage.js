@@ -5,7 +5,6 @@ const ForHerPage = () => {
   return (
     <div>
       <ForHerBanner />
-      {/* Other content specific to "For Her" page */}
     </div>
   );
 };
