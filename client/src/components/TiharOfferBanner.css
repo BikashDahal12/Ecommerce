@@ -1,0 +1,48 @@
+.tihar-offer-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffeb3b; /* Optional: Add background color if no image */
+  }
+  
+  .banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+  }
+  
+  .banner-text {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .banner-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .banner-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .shop-now-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .shop-now-btn:hover {
+    background-color: #e65a50;
+  }
+  

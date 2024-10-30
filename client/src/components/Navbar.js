@@ -29,7 +29,7 @@ function Navbar() {
 
         <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
           <Link to="/">For Him</Link>
-          <Link to="/for-her">For Her</Link>
+          {/* <Link to="/for-her">For Her</Link> */}
         </nav>
 
         <Link to="/" className="logo">
@@ -40,8 +40,9 @@ function Navbar() {
         </Link>
 
         <div className="navbar-center">
-          <Link to="/offers">Tihar Offer</Link>
-          <Link to="/new-arrivals">New Arrivals</Link>
+          
+          <Link to="/for-her">For Her</Link>
+
         </div>
 
         <div className="navbar-right">
