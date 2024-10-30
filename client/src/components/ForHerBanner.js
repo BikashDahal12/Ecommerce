@@ -1,6 +1,5 @@
 import React from 'react';
-import './ForHerBanner.css'; // CSS file for banner styling
-
+import './ForHerBanner.css'; 
 const ForHerBanner = () => {
   return (
     <div className="for-her-banner">

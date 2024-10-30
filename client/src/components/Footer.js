@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="footer-links">
+      {/* <div className="footer-links">
         <ul>
           <li>About Us</li>
           <li>Careers</li>
@@ -54,7 +54,7 @@ const Footer = () => {
           <li>Contact</li>
           <li>Coupons</li>
         </ul>
-      </div>
+      </div> */}
 
       <div className="social-icons">
         <i className="fab fa-facebook"></i>

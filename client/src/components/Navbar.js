@@ -6,7 +6,7 @@ import LoginSignup from './LoginSignup';
 import './Navbar.css'; 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [showLoginSignup, setShowLoginSignup] = useState(false); // Track modal visibility
+  const [showLoginSignup, setShowLoginSignup] = useState(false); 
 
   const navigate = useNavigate();
 
@@ -14,9 +14,9 @@ function Navbar() {
 
   const handleSearchClick = () => navigate('/search');
   const handleCartClick = () => navigate('/cart');
-  const handleUserClick = () => setShowLoginSignup(true); // Open modal
+  const handleUserClick = () => setShowLoginSignup(true); 
 
-  const closeModal = () => setShowLoginSignup(false); // Close modal
+  const closeModal = () => setShowLoginSignup(false); 
 
   return (
     <>
