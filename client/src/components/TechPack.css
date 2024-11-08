@@ -1,0 +1,75 @@
+/* Centering the main container */
+.techpack-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Full product grid */
+  .fullprod {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Adjust grid for 4 photos per row */
+  .pcards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .pcard {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .pimg img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pimg img.hover-photo {
+    display: none;
+  }
+  
+  .pimg:hover img.default-photo {
+    display: none;
+  }
+  
+  .pimg:hover img.hover-photo {
+    display: block;
+  }
+  
+  .pdets {
+    margin-top: 10px;
+  }
+  
+  .pdets h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .priceofdetail {
+    font-size: 1rem;
+  }
+  
+  .priceofdetail s {
+    color: red;
+    margin-right: 10px;
+  }
+  
+  /* Optional: Add a class for when content is loaded */
+  .loaded {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+  }
+  

@@ -1,0 +1,68 @@
+/* Apparels.css */
+.fullprod.loaded {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+  }
+  
+  .pcards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .pcard {
+    position: relative;
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .pcard:hover {
+    transform: scale(1.05);
+  }
+  
+  .pimg {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .default-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .hover-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .pimg:hover .hover-photo {
+    opacity: 1;
+  }
+  
+  .pdets {
+    margin-top: 10px;
+  }
+  
+  .priceofdetail s {
+    color: #888;
+  }
+  
+  .priceofdetail strong {
+    color: #333;
+  }
+  

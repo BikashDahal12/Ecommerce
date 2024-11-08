@@ -3,7 +3,15 @@ import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ForHerBanner from "./components/ForHerBanner";
+import Banner from "./components/Banner";
+
+import SearchResults from './components/SearchResults';
+
+import Backpacks from './components/Backpacks';
+import Apparels from './components/Apparels';
+import TechPack from './components/TechPack';
+
+
 import axios from "axios";
 import "./App.css";
 
@@ -44,7 +52,8 @@ function App() {
     <Router>
       <div className="app-container">
         <Navbar />
-        <ForHerBanner />
+        <Banner />
+
 
         <div className="content-wrapper">
           <Routes>
@@ -58,12 +67,13 @@ function App() {
                     </h4>
                   </div>
                   <div className="offer">
-                    <h4>
+                    <h1>
                       <strong>
-                        This Month we will be contributing 5% of our profits to
-                        charity, orphanage, and old age homes.
+                        {/* This Month we will be contributing 5% of our profits to
+                        charity, orphanage, and old age homes. */}
+                        Products
                       </strong>
-                    </h4>
+                    </h1>
                   </div>
 
                   <div className="sort-container">
@@ -113,8 +123,19 @@ function App() {
                 </div>
               }
             />
-            <Route path="/ForHer" element={<div>For Her Page</div>} />
+
+            <Route path="/Banner" element={<div>Banner Page</div>} />
             <Route path="/account" element={<div>My Account Page</div>} />
+
+            <Route path="/search" element={<SearchResults />} />
+
+
+            <Route path="/" element={<h1>Home</h1>} />
+        <Route path="/BackPacks" element={<Backpacks />} />
+        <Route path="/Apparels" element={<Apparels />} />
+        <Route path="/TechPack" element={<TechPack />} />
+
+
           </Routes>
         </div>
         <Footer />
@@ -124,6 +145,5 @@ function App() {
 }
 
 export default App;
-
 
 

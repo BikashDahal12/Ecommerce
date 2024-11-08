@@ -1,0 +1,25 @@
+/* Backpacks.css */
+.backpacks-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.backpack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.backpack-item {
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px;
+}
+
+.backpack-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
