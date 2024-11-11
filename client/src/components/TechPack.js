@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './TechPack.css'; // Importing the CSS file
+import './TechPack.css'; 
 
 function TechPack() {
   const [techPacks, setTechPacks] = useState([]);

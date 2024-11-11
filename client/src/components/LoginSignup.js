@@ -6,21 +6,21 @@ import email_icon from './Assets/email.png';
 import password_icon from './Assets/password.png';
 
 const LoginSignup = () => {
-  const [action, setAction] = useState('Login'); // Toggle between Login and Sign Up
+  const [action, setAction] = useState('Login'); 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     password: '',
   });
-  const [message, setMessage] = useState(''); // Success/Error message
+  const [message, setMessage] = useState(''); 
 
-  // Handle input changes
+  
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
-  // Handle form submission for Login or Signup
+  
   const handleSubmit = () => {
     const { name, email, password } = formData;
 
@@ -30,23 +30,22 @@ const LoginSignup = () => {
         return;
       }
       setMessage(`Welcome, ${name}! You have signed up successfully.`);
-      // Signup logic (e.g., API call) goes here
+      
     } else {
       if (!email || !password) {
         setMessage('Please enter your email and password to log in.');
         return;
       }
       setMessage(`Hello, ${email}! You are now logged in.`);
-      // Login logic (e.g., API call) goes here
+      
     }
 
-    // Clear form data after submission
+    
     setFormData({ name: '', email: '', password: '' });
   };
 
   return (
     <div className="container">
-      {/* Header with buttons to toggle between Login and Sign Up */}
       <div className="header">
         <button
           className={`header-button ${action === 'Login' ? 'active' : ''}`}
@@ -115,3 +114,6 @@ const LoginSignup = () => {
 };
 
 export default LoginSignup;
+
+
+

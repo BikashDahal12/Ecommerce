@@ -107,3 +107,34 @@
 .footer-bottom img {
   width: 100px;
 }
+
+
+
+/* footer */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  /* padding: 10px; */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

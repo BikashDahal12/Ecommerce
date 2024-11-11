@@ -16,7 +16,8 @@ const Banner = () => {
       
       <div className="banner-text">
         <h1>Exclusive Collection!</h1>
-        <p>Discover our curated selection for Tihar. Embrace elegance and style!</p>
+        <p>Discover our curated selection. Embrace elegance and style!</p>
+        
         {/* <button className="shop-now-btn">Shop Now</button> */}
       </div>
     </div>

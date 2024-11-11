@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './Apparels.css'; // Ensure you have the CSS file for styling
+// import './Apparels.css'; // Ensure you have the CSS file for styling
 
 function Apparels() {
   const [apparels, setApparels] = useState([]);
